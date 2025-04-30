@@ -6,5 +6,5 @@
 | 2. Relational Databases  | database with one or more tables          |  Low Data Redundancy      | relationship between tables   | more complex with varying costs, huge size     |
 
 ### *DBMS Advantages Mind Map*
-![DBMS Advantages Mind Map](./images/DBMSAdantages.png)
+![DBMS Advantages Mind Map](./images/DBMSAdantages.PNG)
 
