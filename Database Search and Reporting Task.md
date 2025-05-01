@@ -82,4 +82,86 @@ Cloud Spanner):**
 	- Limited Control: Organizations may have limited control over the underlying infrastructure and configurations of cloud databases, which can be a concern for some businesses.
 	- Performance Issues: The performance of cloud-based DBMS can be affected by factors such as network latency, bandwidth, and congestion.
 	- Limited Offline Capabilities: Cloud-based DBMS require internet connectivity to access data, which can be a disadvantage in situations where connectivity is limited or unavailable. 
-	- 
+### **Database Engines and Languages**
+**What is a Database Engine?**
+A database engine, also known as a storage engine or database management system (DBMS), is a software component responsible for managing and organizing data in a database. It handles tasks such as data storage, retrieval, modification, and querying while ensuring data integrity and consistency. The database engine efficiently processes user requests, transactions, and database operations using various optimization techniques and algorithms.
+**What are the different types of database engines?**
+- Relational Database Engines: 
+  - These engines are designed to manage structured data organized in tables with predefined relationships. They use SQL (Structured Query Language) for querying and manipulating data. Examples include MySQL, PostgreSQL, Oracle Database, and Microsoft SQL Server.
+- NoSQL Database Engines: 
+  - These engines are designed to handle unstructured or semi-structured data and provide flexible data models. They can be document-based, key-value stores, column-family stores, or graph databases. Examples include MongoDB, Cassandra, Couchbase, and Neo4j.
+- In-Memory Database Engines: 
+  - These engines store data in memory for faster access and processing. They are often used for real-time applications and analytics. Examples include Redis, Memcached, and SAP HANA.
+- NewSQL Database Engines: 
+  - These engines combine the scalability of NoSQL databases with the ACID (Atomicity, Consistency, Isolation, Durability) properties of traditional relational databases. They are designed for high-performance applications. Examples include Google Spanner, CockroachDB, and VoltDB.
+- Object-Oriented Database Engines: 
+  - These engines store data in the form of objects, similar to object-oriented programming. They are designed for applications that require complex data structures and relationships. Examples include db4o and ObjectDB.
+- Time-Series Database Engines: 
+  - These engines are optimized for handling time-stamped data, making them suitable for applications such as IoT, monitoring, and analytics. Examples include InfluxDB, TimescaleDB, and Prometheus.
+- Graph Database Engines: 
+  - These engines are designed to manage and query graph data structures, which consist of nodes and edges. They are used for applications involving complex relationships and connections. Examples include Neo4j, Amazon Neptune, and ArangoDB.
+- Columnar Database Engines: 
+  - These engines store data in columns rather than rows, making them suitable for analytical workloads and data warehousing. Examples include Amazon Redshift, Google BigQuery, and Apache Cassandra.
+- Multi-Model Database Engines: 
+  - These engines support multiple data models (e.g., relational, document, graph) within a single database system, providing flexibility for various applications. Examples include ArangoDB, OrientDB, and MarkLogic.
+**What is a Database Language?**
+	- A database language is a programming language or query language used to interact with and manage databases. It allows users to perform operations such as creating, reading, updating, and deleting data within a database. Database languages provide a way to communicate with the database management system (DBMS) and execute various tasks related to data manipulation and retrieval.
+**Examples: SQL Server, MySQL, Oracle, PostgreSQL**
+	- SQL (Structured Query Language): 
+		- SQL is the most widely used database language for relational databases. It provides a standardized way to query and manipulate data using commands such as SELECT, INSERT, UPDATE, DELETE, and CREATE TABLE.
+	- PL/SQL (Procedural Language/SQL): 
+		- PL/SQL is an extension of SQL used in Oracle databases. It allows users to write procedural code, including loops, conditionals, and error handling, within SQL statements.
+	- T-SQL (Transact-SQL): 
+		- T-SQL is an extension of SQL used in Microsoft SQL Server. It includes additional features such as procedural programming constructs, error handling, and built-in functions.
+	- MySQL: 
+		- MySQL is an open-source relational database management system that uses SQL as its query language. It is widely used for web applications and supports various storage engines.
+	- PostgreSQL: 
+		- PostgreSQL is an open-source relational database management system that supports advanced features such as JSON data types, full-text search, and custom data types. It uses SQL as its primary query language.
+		
+**What languages do they use? (e.g., T-SQL, PL/SQL, ANSI SQL)**
+	- T-SQL (Transact-SQL): 
+		- T-SQL is an extension of SQL used in Microsoft SQL Server. It includes additional features such as procedural programming constructs, error handling, and built-in functions.
+	- PL/SQL (Procedural Language/SQL): 
+		- PL/SQL is an extension of SQL used in Oracle databases. It allows users to write procedural code, including loops, conditionals, and error handling, within SQL statements.
+	- ANSI SQL: 
+		- ANSI SQL (American National Standards Institute SQL) is the standard version of SQL defined by the ANSI. It provides a common syntax and set of rules for querying and manipulating data across different relational database systems.
+### **Database Design and Normalization**
+**What is Database Design?**
+- Database design is the process of defining the structure, organization, and relationships of data within a database. It involves creating a blueprint for how data will be stored, accessed, and managed to ensure data integrity, efficiency, and scalability. The goal of database design is to create a well-structured database that meets the needs of the application and its users.
+- The database design process typically includes the following steps:
+	1. Requirements Analysis: 
+		- Understanding the data requirements of the application and its users.
+	2. Conceptual Design: 
+		- Creating a high-level model of the database, including entities, attributes, and relationships.
+	3. Logical Design: 
+		- Translating the conceptual model into a logical schema, defining tables, columns, and data types.
+	4. Physical Design: 
+		- Implementing the logical schema in a specific database management system (DBMS), including indexing and storage considerations.
+	5. Implementation: 
+		- Creating the database and populating it with data.
+**What is Normalization?**
+		- Normalization is the process of organizing data in a database to minimize redundancy and improve data integrity. It involves dividing large tables into smaller, related tables and defining relationships between them. The goal of normalization is to eliminate data anomalies, such as insertion, update, and deletion anomalies, by ensuring that each piece of data is stored in only one place.
+
+**Is there a relationship between the engine and the language?**
+**A programming language** (e.g., Python, JavaScript) is a way to write code.
+
+**An engine** (or runtime/interpreter) executes code written in that language.
+
+Example: The V8 engine runs JavaScript in Chrome.
+
+Example: The CPython engine runs Python.
+
+**A database engine** is a software component that manages data storage and retrieval.
+
+**A database language** (e.g., SQL) is a way to interact with the database engine.
+Example: SQL is used to query and manipulate data in a relational database engine (e.g., MySQL, PostgreSQL).
+
+**Can one language work across different engines?**
+- Yes, many database languages, such as SQL, can work across different database engines. However, there may be variations in syntax and features between different engines. For example, while SQL is a standard language for relational databases, each database engine may have its own extensions or variations (e.g., T-SQL for SQL Server, PL/SQL for Oracle).
+
+### **Database Security and Access Control**
+**What is Database Security?**
+- Database security refers to the measures and practices implemented to protect databases from unauthorized access, data breaches, and other security threats. It involves safeguarding sensitive data, ensuring data integrity, and maintaining the availability of database systems. Database security encompasses various aspects, including authentication, authorization, encryption, auditing, and backup and recovery.
+- The goal of database security is to prevent unauthorized access to data, protect against data loss or corruption, and ensure compliance with regulatory requirements. Organizations implement database security measures to mitigate risks associated with data breaches, insider threats, and cyberattacks.
+- Database security is essential for maintaining the confidentiality, integrity, and availability of data, which are critical components of information security.
+
