@@ -1,4 +1,5 @@
 # Database Search and Reporting Task
+## Objective
 ###  *Flat File Systems vs Relational Databases*
 | Storage Type             | Structure                     | Data Redundancy |  Relationships | Drawbacks |
 | -------------------------| --------------------------                | ----------------          | --------------                | ----------|
@@ -23,3 +24,36 @@ Explaining each of the following roles:
 • BI Developer: 
   - A BI (Business Intelligence) developer is responsible for designing and implementing data analysis and reporting solutions. They work with data warehousing, ETL (Extract, Transform, Load) processes, and create dashboards and reports to provide insights into business performance.
 
+## Additional Research Topics to Include in the Report
+### Types of Databases 
+• Relational vs Non-Relational (e.g., MongoDB, Cassandra)
+- Relational: 
+  - Structuring information in tables, rows, and columns.
+  - Uses SQL for querying
+  - Examples: MySQL, PostgreSQL, Oracle
+- Non-Relational: 
+  - store data as individual, unconnected files and can be used for complex, unstructured data types, such as documents or rich media files.
+  - Uses various query languages (e.g., MongoDB uses BSON)
+  - Examples: MongoDB, Cassandra, Couchbase
+
+• Centralized vs Distributed vs Cloud Databases 
+- Centralized database: 
+  - All data is stored in a single location, typically on a server.
+  - Easier to manage and secure but can be a single point of failure.
+- Distributed database: 
+  - Data is distribute across multiple locations or servers.
+  - Provides redundancy and improved performance but can be more complex to manage.
+- Cloud database: 
+  - Data is stored in the cloud and accessed over the internet.
+  - Offers scalability and flexibility but may raise concerns about data security and privacy.
+• Use case examples:
+	-  Relational: 
+		- Banking systems, e-commerce platforms, and any application requiring complex queries and transactions.
+	-  Non-Relational: 
+		- Social media platforms, content management systems, and applications with large volumes of unstructured data.
+	-  Centralized: 
+		- Small businesses with limited data needs and resources.
+	- Distributed: 
+		- Large organizations with multiple locations or data centers.
+	-  Cloud: 
+		- Startups and businesses looking for cost-effective and scalable solutions.
