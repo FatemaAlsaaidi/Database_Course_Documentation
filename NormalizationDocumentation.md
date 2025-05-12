@@ -51,6 +51,32 @@ Enrollments(StudentID, CourseID)
 
 Now, each table has one responsibility, which aligns with SRP.
 
+Normalization typically involves applying a series of rules or normal forms, which are guidelines for structuring data. 
+## Different normal forms
+!['Different normal forms'](images/normalizationType.PNG)
+
+1. **First Normal Form (1NF)**: 
+In 1NF, every database cell or relation contains an single value that can’t be further divided, for example the table shouldn’t have **multivalued attributes**.
+Example:
+The following table contains two phone number values for a single attribute.
+
+| Emp_ID | Student Name | Phone Number |
+|----|-----|------|
+|1| Fatema | 12345678 |
+|2| Noor | 12345678, 87654321 |
+
+After applying normalization
+
+|Emp_ID| Student Name |
+|----|---|
+|1| Fatema|
+|2| Noor|
+
+|Emp_ID| Phone Number |
+|---|----|
+|1| 12345678|
+|2| 12345678|
+|2| 87654321|
 
 
 
